@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#FAF7F2">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="description" content="Clean, minimal, and mobile-friendly restaurant digital menu.">
+  <title>Digital Menu</title>
+  
+  <!-- Fonts: System typography with Google Fonts progressive enhancement -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <div class="brand-monogram" aria-hidden="true">
+        <span id="brand-letter">L</span>
+      </div>
+      <h1 class="restaurant-name" id="restaurant-name">Loading Menu...</h1>
+      <p class="restaurant-tagline" id="restaurant-tagline">Freshly prepared, sustainably sourced</p>
+      
+      <!-- Restaurant Meta details (Hours & Address) -->
+      <div class="meta-row" id="meta-row">
+        <span class="meta-item" id="restaurant-hours">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="hours-text">Open Daily</span>
+        </span>
+        <span class="meta-dot">·</span>
+        <span class="meta-item" id="restaurant-address">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span id="address-text">Dining Room</span>
+        </span>
+      </div>
+
+      <!-- Quick Instant Search Bar -->
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="search" 
+            id="search-input" 
+            placeholder="Search dishes, ingredients, dietary..." 
+            autocomplete="off"
+            aria-label="Search menu items"
+          >
+          <button type="button" id="search-clear-btn" class="search-clear hidden" aria-label="Clear search">
+            ✕
+          </button>
+        </div>
+        <div id="search-results-info" class="search-results-info hidden"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Horizontal Category Navigation -->
+  <nav class="sticky-nav" id="sticky-nav" aria-label="Category Navigation">
+    <div class="sticky-nav-container">
+      <div class="nav-scroll" id="category-tabs">
+        <!-- Dynamically injected category pill buttons -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Menu Dynamic Content -->
+  <main class="menu-container" id="menu-container">
+    <!-- Skeleton loader shown while menu.json is fetching -->
+    <div class="menu-loader" id="menu-loader">
+      <div class="loader-spinner"></div>
+      <p>Curating today's menu...</p>
+    </div>
+  </main>
+
+  <!-- Footer with Dietary notice and branding -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="notice-text" id="footer-notice">
+        Please let our culinary team know of any food allergies before ordering.
+      </p>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="copyright" id="footer-brand">&copy; <span id="current-year"></span> Fast Food Restaurant · Digital Menu</p>
+        <p class="source-hint">100% data-driven updates via <code>menu.json</code></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top hidden" id="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>

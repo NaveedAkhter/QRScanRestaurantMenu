@@ -1,0 +1,248 @@
+{
+  "restaurant": {
+    "name": "Fast Food Restaurant",
+    "tagline": "Fast Food, Pizza, Karahi & Sweets",
+    "currency": "Rs. ",
+    "hours": "Open Daily · 5:00 PM – 2:00 AM",
+    "address": "Landhi, Road 1, Karachi",
+    "phone": "+92-342-0000000",
+    "notice": "All meats are 100% Halal and flame-cooked to order. Please inform your server of any dietary allergies."
+  },
+  "favorites": {
+    "id": "favorites",
+    "name": "Chef's Favorites",
+    "description": "Our most celebrated house specialties, flame-grilled and loved by our regular guests.",
+    "image": "images/favorites.jpg"
+  },
+  "categories": [
+    {
+      "id": "burgers",
+      "name": "Signature Burgers",
+      "description": "Double-smashed prime beef patties seared on cast iron, served on freshly baked artisanal brioche buns.",
+      "image": "images/burgers.jpg",
+      "items": [
+        {
+          "id": "b1",
+          "name": "The Black Truffle Smash",
+          "description": "Double smash prime beef, roasted garlic & black truffle aioli, melted aged English cheddar, caramelized shallots, peppery wild baby arugula.",
+          "price": 1450,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["Chef Special", "Prime Beef"]
+        },
+        {
+          "id": "b2",
+          "name": "Smoked Beef Bacon & BBQ",
+          "description": "Twin smash beef patties, crispy wood-smoked beef bacon, hickory BBQ glaze, melted pepper jack, golden tobacco onions.",
+          "price": 1350,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["House Favorite"]
+        },
+        {
+          "id": "b3",
+          "name": "Heritage Classic Deluxe",
+          "description": "Double Angus beef patties, yellow cheddar, crisp heirloom beefsteak tomato, shredded iceberg lettuce, house dill pickles, secret bistro sauce.",
+          "price": 1150,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Classic"]
+        },
+        {
+          "id": "b4",
+          "name": "Hot Fermented Honey Crispy Chicken",
+          "description": "24-hour buttermilk brined crispy fried chicken thigh, fermented habanero hot honey drizzle, crunchy pickled jalapeño slaw, kewpie mayo.",
+          "price": 1250,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["Spicy", "Crispy Chicken"]
+        },
+        {
+          "id": "b5",
+          "name": "Wagyu & Wild Forest Mushroom",
+          "description": "Dry-aged Wagyu beef blend, pan-roasted wild chanterelles & shiitake, cave-aged Gruyère cheese, black garlic reduction.",
+          "price": 2250,
+          "isFavorite": false,
+          "available": false,
+          "tags": ["Limited Reserve"]
+        }
+      ]
+    },
+    {
+      "id": "rolls",
+      "name": "Gourmet Rolls & Wraps",
+      "description": "Freshly stretched flatbreads rolled warm with charred spiced proteins, fresh herbs, and house-churned sauces.",
+      "image": "images/rolls.jpg",
+      "items": [
+        {
+          "id": "r1",
+          "name": "Charred Chicken Shawarma Roll",
+          "description": "",
+          "price": 650,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["House Favorite"]
+        },
+        {
+          "id": "r2",
+          "name": "Slow-Braised Lamb & Smoked Tahini",
+          "description": "12-hour pulled tender lamb shoulder, fire-scorched eggplant baba ganoush, minted sheep yogurt, roasted pine nuts, pomegranate molasses.",
+          "price": 950,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Signature Lamb"]
+        },
+        {
+          "id": "r3",
+          "name": "Crispy Halloumi & Wild Za'atar",
+          "description": "Golden griddled Halloumi cheese, crushed Hass avocado, heirloom confit tomatoes, wild Lebanese za'atar herbs, cold-pressed olive oil.",
+          "price": 750,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Vegetarian"]
+        },
+        {
+          "id": "r4",
+          "name": "Blackened Fish & Chipotle Crema Wrap",
+          "description": "Spiced grilled red snapper fillet, charred lime crema, pickled red onion, shredded purple cabbage crunch, fresh cilantro in warm tortilla.",
+          "price": 850,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Seafood"]
+        }
+      ]
+    },
+    {
+      "id": "bbq",
+      "name": "Flame-Grilled BBQ",
+      "description": "Slow-smoked over seasoned oak wood and finished over searing open charcoal for an authentic smoky crust.",
+      "image": "images/bbq.jpg",
+      "items": [
+        {
+          "id": "q1",
+          "name": "Smoked Prime Beef Brisket",
+          "description": "Generous cut prime beef brisket smoked for 14 hours, deep peppery bark, melting smoke ring, sour dill pickles, warm buttered skillet cornbread.",
+          "price": 2850,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["Chef Special", "14-Hour Smoked"]
+        },
+        {
+          "id": "q2",
+          "name": "Flame-Seared Lamb Chops",
+          "description": "Tender pasture-raised lamb chops marinated in rosemary and smoked garlic, charred on open flame, served with mint chimichurri.",
+          "price": 2450,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Signature"]
+        },
+        {
+          "id": "q3",
+          "name": "Charcoal Grilled Atlantic Salmon",
+          "description": "Wild Atlantic salmon fillet basted with brown sugar glaze, charred lemon cheek, blistered cherry tomatoes, dill crème fraîche.",
+          "price": 2650,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Seafood"]
+        },
+        {
+          "id": "q4",
+          "name": "Smoked Beef Brisket Burnt Ends",
+          "description": "Caramelized beef brisket point cubes rendered with oak wood smoke, tossed in tangy espresso BBQ reduction and toasted sesame.",
+          "price": 1750,
+          "isFavorite": false,
+          "available": false,
+          "tags": ["Limited Batch"]
+        }
+      ]
+    },
+    {
+      "id": "karahi",
+      "name": "Karahi",
+      "description": "Slow-smoked over seasoned oak wood and finished over searing open charcoal for an authentic smoky crust.",
+      "image": "images/karahi.jpg",
+      "items": [
+        {
+          "id": "q1",
+          "name": "Smoked Prime Beef Brisket",
+          "description": "Generous cut prime beef brisket smoked for 14 hours, deep peppery bark, melting smoke ring, sour dill pickles, warm buttered skillet cornbread.",
+          "price": 2850,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["Chef Special", "14-Hour Smoked"]
+        },
+        {
+          "id": "q2",
+          "name": "Flame-Seared Lamb Chops",
+          "description": "Tender pasture-raised lamb chops marinated in rosemary and smoked garlic, charred on open flame, served with mint chimichurri.",
+          "price": 2450,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Signature"]
+        },
+        {
+          "id": "q3",
+          "name": "Charcoal Grilled Atlantic Salmon",
+          "description": "Wild Atlantic salmon fillet basted with brown sugar glaze, charred lemon cheek, blistered cherry tomatoes, dill crème fraîche.",
+          "price": 2650,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Seafood"]
+        },
+        {
+          "id": "q4",
+          "name": "Smoked Beef Brisket Burnt Ends",
+          "description": "Caramelized beef brisket point cubes rendered with oak wood smoke, tossed in tangy espresso BBQ reduction and toasted sesame.",
+          "price": 1750,
+          "isFavorite": false,
+          "available": false,
+          "tags": ["Limited Batch"]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Artisan Desserts",
+      "description": "Crafted fresh every morning in our pastry kitchen using single-origin cacao and pure seasonal dairy.",
+      "image": "images/desserts.jpg",
+      "items": [
+        {
+          "id": "d1",
+          "name": "Valrhona Molten Dark Fondant",
+          "description": "70% dark chocolate warm molten flowing center, churned Madagascar vanilla bean gelato, fresh raspberries, Valrhona cocoa dust.",
+          "price": 850,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["House Favorite", "Vegetarian"]
+        },
+        {
+          "id": "d2",
+          "name": "San Sebastián Basque Cheesecake",
+          "description": "Scorched caramelized top, rich velvety molten cream cheese center, macerated wild berries, flake sea salt.",
+          "price": 750,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Vegetarian"]
+        },
+        {
+          "id": "d3",
+          "name": "Sicilian Bronte Pistachio Tart",
+          "description": "Flaky sweet butter pastry shell, roasted pistachio frangipane, delicate orange blossom essence, whipped honey mascarpone.",
+          "price": 650,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Vegetarian"]
+        },
+        {
+          "id": "d4",
+          "name": "Cold-Brew Espresso Tiramisu",
+          "description": "Oak-smoked espresso soaked ladyfinger biscuits, whipped egg yolk zabaglione cream, shaved dark chocolate curls.",
+          "price": 780,
+          "isFavorite": false,
+          "available": true,
+          "tags": ["Vegetarian"]
+        }
+      ]
+    }
+  ]
+}
