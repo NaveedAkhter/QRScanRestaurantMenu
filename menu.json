@@ -11,6 +11,7 @@
   "favorites": {
     "id": "favorites",
     "name": "Chef's Favorites",
+    "icon": "⭐",
     "description": "Our most celebrated house specialties, flame-grilled and loved by our regular guests.",
     "image": "images/favorites.jpg"
   },
@@ -18,6 +19,7 @@
     {
       "id": "burgers",
       "name": "Signature Burgers",
+      "icon": "🍔",
       "description": "Double-smashed prime beef patties seared on cast iron, served on freshly baked artisanal brioche buns.",
       "image": "images/burgers.jpg",
       "items": [
@@ -71,13 +73,14 @@
     {
       "id": "rolls",
       "name": "Gourmet Rolls & Wraps",
+      "icon": "🌯",
       "description": "Freshly stretched flatbreads rolled warm with charred spiced proteins, fresh herbs, and house-churned sauces.",
       "image": "images/rolls.jpg",
       "items": [
         {
           "id": "r1",
           "name": "Charred Chicken Shawarma Roll",
-          "description": "",
+          "description": "Charred slow-roasted chicken shawarma, garlic toum sauce, pickled wild cucumbers, sumac onions, wrapped tight in toasted saj bread.",
           "price": 650,
           "isFavorite": true,
           "available": true,
@@ -115,6 +118,7 @@
     {
       "id": "bbq",
       "name": "Flame-Grilled BBQ",
+      "icon": "🔥",
       "description": "Slow-smoked over seasoned oak wood and finished over searing open charcoal for an authentic smoky crust.",
       "image": "images/bbq.jpg",
       "items": [
@@ -158,51 +162,53 @@
     },
     {
       "id": "karahi",
-      "name": "Karahi",
-      "description": "Slow-smoked over seasoned oak wood and finished over searing open charcoal for an authentic smoky crust.",
+      "name": "Wok Karahi Specialties",
+      "icon": "🍲",
+      "description": "Slow-simmered in traditional iron woks over high flame with fresh ginger, crushed tomatoes, and aromatic desi spices.",
       "image": "images/karahi.jpg",
       "items": [
         {
-          "id": "q1",
-          "name": "Smoked Prime Beef Brisket",
-          "description": "Generous cut prime beef brisket smoked for 14 hours, deep peppery bark, melting smoke ring, sour dill pickles, warm buttered skillet cornbread.",
-          "price": 2850,
+          "id": "k1",
+          "name": "Special Chicken Makhni Karahi (Full)",
+          "description": "Tender chicken cooked in rich churned desi butter gravy, mild Kashmiri chili, cream, julienned ginger, and freshly ground garam masala.",
+          "price": 1850,
           "isFavorite": true,
           "available": true,
-          "tags": ["Chef Special", "14-Hour Smoked"]
+          "tags": ["Chef Special", "House Favorite"]
         },
         {
-          "id": "q2",
-          "name": "Flame-Seared Lamb Chops",
-          "description": "Tender pasture-raised lamb chops marinated in rosemary and smoked garlic, charred on open flame, served with mint chimichurri.",
-          "price": 2450,
+          "id": "k2",
+          "name": "Shinwari Mutton Karahi (Full)",
+          "description": "Traditional Khyber Shinwari style fresh mutton wok-seared in lamb fat with sea salt, whole black pepper, and ripe vine tomatoes.",
+          "price": 2750,
+          "isFavorite": true,
+          "available": true,
+          "tags": ["Shinwari Special", "Mutton"]
+        },
+        {
+          "id": "k3",
+          "name": "Balochi Tikka Karahi",
+          "description": "Charcoal grilled marinated chicken boti tossed in fragrant spiced green chili broth, crushed coriander seeds, and lemon juice.",
+          "price": 1650,
           "isFavorite": false,
           "available": true,
-          "tags": ["Signature"]
+          "tags": ["Spicy", "Balochi Style"]
         },
         {
-          "id": "q3",
-          "name": "Charcoal Grilled Atlantic Salmon",
-          "description": "Wild Atlantic salmon fillet basted with brown sugar glaze, charred lemon cheek, blistered cherry tomatoes, dill crème fraîche.",
-          "price": 2650,
+          "id": "k4",
+          "name": "Paneer Reshmi Karahi",
+          "description": "Fresh artisan cottage cheese cubes simmered in spiced tomato cashew butter sauce with cracked cumin and fresh fenugreek leaves.",
+          "price": 1250,
           "isFavorite": false,
           "available": true,
-          "tags": ["Seafood"]
-        },
-        {
-          "id": "q4",
-          "name": "Smoked Beef Brisket Burnt Ends",
-          "description": "Caramelized beef brisket point cubes rendered with oak wood smoke, tossed in tangy espresso BBQ reduction and toasted sesame.",
-          "price": 1750,
-          "isFavorite": false,
-          "available": false,
-          "tags": ["Limited Batch"]
+          "tags": ["Vegetarian"]
         }
       ]
     },
     {
       "id": "desserts",
       "name": "Artisan Desserts",
+      "icon": "🍰",
       "description": "Crafted fresh every morning in our pastry kitchen using single-origin cacao and pure seasonal dairy.",
       "image": "images/desserts.jpg",
       "items": [
